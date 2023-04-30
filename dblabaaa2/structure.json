@@ -1,0 +1,20 @@
+{
+    "C:\\Users\\Dell\\Desktop\\Book.csv": {
+        "Name": "System.String",
+        "Author": "System.String",
+        "YearPublished": "System.Int32",
+        "BookCase": "System.UInt32",
+        "BookShelf": "System.UInt32"
+    },
+    "C:\\Users\\Dell\\Desktop\\Customer.csv": {
+        "Name": "System.String",
+        "Id": "System.Int64"
+    },
+    "C:\\Users\\Dell\\Desktop\\History.csv": {
+        "Name": "System.String",
+        "Id": "System.Int64",
+        "Operation": "System.String"
+    }
+
+
+}
