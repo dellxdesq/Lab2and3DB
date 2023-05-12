@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace dblabaaa2
 {
-    public class Book
+    public class Book : Printable
     {
         public Book(string? name, string? author, int? yearPublished, uint? bookCase, uint? bookShelf)
         {
@@ -36,6 +37,23 @@ namespace dblabaaa2
         public int? YearPublished { get; set; }
         public uint? BookCase { get; set; }
         public uint? BookShelf { get; set; }
+        public int Width => CalculateWidth();
 
+        public List<string> GetNames()
+        {
+            return new List<string>
+            {
+                "Name", "Author", "YearPublished", "BookCase", "BookShelf"
+            };
+        }
+        public int CalculateWidth()
+        {
+            var width = new List<int>() { Name.Length,  Author.Length, YearPublished.ToString().Length, BookCase.ToString().Length , BookShelf.ToString().Length };
+            return width.Max() + 1;
+
+        }
+        
     }
+
+    
 }
